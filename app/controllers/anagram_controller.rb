@@ -8,16 +8,9 @@ class AnagramController < ApplicationController
     result={}
     words.each do |word|
       matches = get_matches(get_dictionary, word)
-
       result["#{word}"] = matches
     end
-
-    render :text => result.to_json
-  end
-
-  def help
-    DictionaryService.new()
-    render :text => 'help'
+    render :json => result.to_json
   end
 end
 
@@ -32,7 +25,6 @@ def get_dictionary
   dict = File.open(word_source, 'r'){|file| file.readlines.collect{|line| line.chomp}}
   dict
 end
-
 
 def get_matches(dictionary, word)
   matches = []
