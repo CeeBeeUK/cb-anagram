@@ -1,0 +1,12 @@
+language: ruby
+rvm:
+- 2.1.5
+before_install:
+- sudo apt-get update -qq
+deploy:
+  provider: heroku
+  api_key:
+    secure: S6ior0PB5Ffkld7DumD3V4Ec7BhWf2sTL2oClwttHcDauQvc7NNScf6yJstYHXbXGdEbPlqgc05VCnoM1OGQ+iD3tnJmyElBJvMMLHCcWo+1dV4rXkl5DenpZW2aEsz3+reGA0DNazfg8Mtg3sw/YKWJM9H1XYrq4v4ypUkDbfo=
+  app: cb-anagram
+  on:
+    repo: CeeBeeUK/anagram-finder
