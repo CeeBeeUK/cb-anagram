@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/CeeBeeUK/anagram-finder.svg)](https://travis-ci.org/CeeBeeUK/anagram-finder)
+[![Build Status](https://travis-ci.org/CeeBeeUK/cb-anagram.svg)](https://travis-ci.org/CeeBeeUK/cb-anagram)
 
 Anagram Finder
 ==============
