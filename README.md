@@ -12,7 +12,7 @@ e.g. http://myapp.com/stop,start
 * Ruby
 
 # Configuring
-* Clone the repo https://github.com/CeeBeeUK/cb-anagram.git
-* run $bundle install
-* run $rails s to start the webserver
+* run $`git clone https://github.com/CeeBeeUK/cb-anagram.git`
+* run $`bundle install`
+* run $`rails s` to start the webserver
 * open http://localhost:3000 and start entering words
