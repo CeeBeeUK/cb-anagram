@@ -23,5 +23,11 @@ RSpec.describe AnagramController, :type => :controller do
       expect(response.content_type).to eq("application/json")
       expect(JSON.parse(response.body)).to eql(expected)
     end
+    it 'should return an empty json object if no matches found' do
+      expected = JSON.parse('{"wibble":[]}')
+      get :search, :wordlist => 'wibble'
+      expect(response.content_type).to eq("application/json")
+      expect(JSON.parse(response.body)).to eql(expected)
+    end
   end
 end
