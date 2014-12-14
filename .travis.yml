@@ -6,7 +6,7 @@ before_install:
 deploy:
   provider: heroku
   api_key:
-    secure: S6ior0PB5Ffkld7DumD3V4Ec7BhWf2sTL2oClwttHcDauQvc7NNScf6yJstYHXbXGdEbPlqgc05VCnoM1OGQ+iD3tnJmyElBJvMMLHCcWo+1dV4rXkl5DenpZW2aEsz3+reGA0DNazfg8Mtg3sw/YKWJM9H1XYrq4v4ypUkDbfo=
+    secure: UO652t0hADjMn97lsovMMsTNa08xBnTozTmDB1vr/7aD18Ut0kTYU2kq1Mv2QDCCNO3V3me+QozAx/SKPEVI80ZdegQHWt5sbjX/ZSOwy/ks6H7+a8rBeQbHhqzEwqN5WgGNFsioxLltsS5eqLnA7U3C2imRFlcTdRhB59LRHZ8=
   app: cb-anagram
   on:
     repo: CeeBeeUK/cb-anagram
