@@ -16,10 +16,6 @@ end
 
 private
 
-def word_list_params
-  params.require(:wordlist)
-end
-
 def get_dictionary
   word_source = File.join('lib','assets','words.txt')
   dict = File.open(word_source, 'r'){|file| file.readlines.collect{|line| line.chomp}}
