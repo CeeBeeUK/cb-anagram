@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20141215095502) do
 
   create_table "entries", force: true do |t|
     t.string   "word"
-    t.string   "array"
+    t.string   "array",      default: [], array: true
     t.datetime "created_at"
     t.datetime "updated_at"
   end

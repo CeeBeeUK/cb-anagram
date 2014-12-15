@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe Entry, :type => :model do
-  let(:entry) { Entry.new( id: 1, word: 'hi', array: "['h','i']" ) }
+  let(:entry) { Entry.new( id: 1, word: 'hi', array: ['h','i'] ) }
 
   it 'should pass default build' do
     expect(entry).to be_valid
@@ -14,5 +14,5 @@ describe Entry, :type => :model do
     entry.word=nil
     expect(entry).to be_invalid
   end
-
+  
 end
