@@ -14,5 +14,4 @@ describe Entry, :type => :model do
     entry.word=nil
     expect(entry).to be_invalid
   end
-  
 end

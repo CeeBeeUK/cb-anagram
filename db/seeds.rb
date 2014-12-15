@@ -9,6 +9,9 @@
 puts 'Starting import'
 word_source = File.join('lib','assets','words.txt')
 dictionary = File.open(word_source, 'r'){|file| file.readlines.collect{|line| line.chomp}}
-dictionary.each do |w|
-  Entry.create!(word: w, array: w.chars.sort)
-end
+ActiveRecord::Base.transaction {
+  dictionary.each do |w|
+    Entry.create(word: w, array: w.chars.sort)
+  end
+}
+puts 'Finished Import'
