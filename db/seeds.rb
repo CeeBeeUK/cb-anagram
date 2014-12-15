@@ -5,9 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-puts 'clearing any previous entries'
+puts '---Clearing any previous entries'
 ActiveRecord::Base.connection.execute("TRUNCATE TABLE entries RESTART IDENTITY;")
-puts 'Starting import'
+puts '---Starting import'
 word_source = File.join('lib','assets','words.txt')
 dictionary = File.open(word_source, 'r'){|file| file.readlines.collect{|line| line.chomp}}
 ActiveRecord::Base.transaction {
@@ -15,4 +15,4 @@ ActiveRecord::Base.transaction {
     Entry.create(word: w, wrd_array: w.chars.sort.to_s)
   end
 }
-puts 'Finished Import'
+puts '---Finished Import'
