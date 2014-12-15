@@ -35,5 +35,12 @@ RSpec.describe AnagramController, :type => :controller do
       expect(response.content_type).to eq("application/json")
       expect(JSON.parse(response.body)).to eql(expected)
     end
+    it 'should be case insensitive'do
+      expected = JSON.parse('{"clean":["lance"]}')
+      get :search, :wordlist => 'Clean'
+      expect(response.content_type).to eq("application/json")
+      expect(JSON.parse(response.body)).to eql(expected)
+    end
+
   end
 end
