@@ -5,6 +5,14 @@ rvm:
 - 2.1.5
 before_install:
 - sudo apt-get update -qq
+before_script:
+- psql -c 'create role pq login createdb;' -U postgres
+addons:
+postgresql: 9.3
+script:
+- bundle exec rake db:create
+- bundle exec rake db:migrate
+- bundle exec rake db:seed
 deploy:
   provider: heroku
   api_key:
