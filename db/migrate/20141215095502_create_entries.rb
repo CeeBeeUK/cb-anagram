@@ -2,7 +2,7 @@ class CreateEntries < ActiveRecord::Migration
   def change
     create_table :entries do |t|
       t.string :word
-      t.string :array, array: true, default: []
+      t.string :wrd_array
 
       t.timestamps
     end

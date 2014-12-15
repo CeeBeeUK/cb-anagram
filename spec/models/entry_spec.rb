@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe Entry, :type => :model do
-  let(:entry) { Entry.new( id: 1, word: 'hi', array: ['h','i'] ) }
+  let(:entry) { Entry.new( id: 1, word: 'hi', wrd_array: ['h','i'] ) }
 
   it 'should pass default build' do
     expect(entry).to be_valid
@@ -11,7 +11,7 @@ describe Entry, :type => :model do
     expect(entry).to be_invalid
   end
   it 'should be invalid if array is empty' do
-    entry.word=nil
+    entry.wrd_array=nil
     expect(entry).to be_invalid
   end
 end
