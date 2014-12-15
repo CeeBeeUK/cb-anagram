@@ -1,0 +1,19 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 10
+
+development:
+  <<: *default
+  database: cb-anagram_development
+
+test:
+  <<: *default
+  database: cb-anagram_test
+
+production:
+  <<: *default
+  database: cb-anagram_production
+  pool: 5
+  timeout: 5000
