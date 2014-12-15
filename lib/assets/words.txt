@@ -3662,6 +3662,7 @@ Creole
 Creole's
 Creoles
 Creon
+Crepitus
 Crest
 Crest's
 Cretaceous
@@ -3747,6 +3748,7 @@ Cunningham
 Cunningham's
 Cupid
 Cupid's
+Cuprites
 Curacao
 Curacao's
 Curie
@@ -11930,6 +11932,7 @@ Pickford's
 Pickwick
 Pickwick's
 Pict
+Piecrust
 Piedmont
 Piedmont's
 Pierce
