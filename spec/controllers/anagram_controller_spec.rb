@@ -29,5 +29,11 @@ RSpec.describe AnagramController, :type => :controller do
       expect(response.content_type).to eq("application/json")
       expect(JSON.parse(response.body)).to eql(expected)
     end
+    it 'should strip spaces from the search words' do
+      expected = JSON.parse('{"start":["tarts"],"stop":["opts","post","pots","spot","tops"]}')
+      get :search, :wordlist => 'start ,stop'
+      expect(response.content_type).to eq("application/json")
+      expect(JSON.parse(response.body)).to eql(expected)
+    end
   end
 end
