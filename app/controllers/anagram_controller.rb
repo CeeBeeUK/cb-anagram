@@ -7,7 +7,7 @@ class AnagramController < ApplicationController
     words = params['wordlist'].split(',')
     result={}
     words.each do |word|
-      word = word.strip
+      word = word.strip.downcase
       result["#{word}"] = get_matches(word.strip)
     end
     render :json => result.to_json
