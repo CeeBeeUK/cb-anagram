@@ -11,7 +11,7 @@ describe Entry, :type => :model do
     expect(entry).to be_invalid
   end
   it 'should be invalid if array is empty' do
-    array.word=nil
+    entry.word=nil
     expect(entry).to be_invalid
   end
 
