@@ -18,8 +18,6 @@ e.g. http://myapp.com/stop,start
 * run the following commands
 * $`git clone https://github.com/CeeBeeUK/cb-anagram.git`
 * $`bundle install`
-* $`rake db:create`
-* $`rake db:migrate`
-* $`rake db:migrate RAILS_ENV=test`
+* $`rake configure:initial`
 * run $`rails s` to start the webserver
-* open http://localhost:3000 and start entering words
+* open http://localhost:3000/ and start entering words
