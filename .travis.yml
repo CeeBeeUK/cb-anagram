@@ -6,7 +6,7 @@ rvm:
 before_install:
 - sudo apt-get update -qq
 before_script:
-- psql -c 'create role pq login createdb;' -U postgres
+- psql -c 'create role cb-anagram login createdb;' -U postgres
 addons:
 postgresql: 9.3
 script:
@@ -21,3 +21,6 @@ deploy:
   app: cb-anagram
   on:
     repo: CeeBeeUK/cb-anagram
+  run:
+    - "rake db:migrate"
+    - "rake db:seed"
