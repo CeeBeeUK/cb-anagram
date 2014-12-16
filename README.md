@@ -15,11 +15,14 @@ e.g. http://myapp.com/stop,start
 * http://cb-anagram.herokuapp.com/
 
 # Pre-requisites
-* Ruby
+* Ruby installed (built with 2.1.5)
+* PostgreSQL 9.3.5 (server running)
 
 # Configuring
 * run the following commands
 * $`git clone https://github.com/CeeBeeUK/cb-anagram.git`
+* $`cd cb-anagram`
+* m
 * $`bundle install`
 * $`rake configure:initial`
 * run $`rails s` to start the webserver
