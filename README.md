@@ -4,9 +4,7 @@
 [![Test Coverage](https://codeclimate.com/github/CeeBeeUK/cb-anagram/badges/coverage.svg)](https://codeclimate.com/github/CeeBeeUK/cb-anagram)
 
 # kanban board
-[![Stories in Backlog](https://badge.waffle.io/CeeBeeUK/cb-anagram.svg?label=ready&title=Backlog)](http://waffle.io/CeeBeeUK/cb-anagram)
 [![Stories in Ready](https://badge.waffle.io/CeeBeeUK/cb-anagram.svg?label=ready&title=Ready)](http://waffle.io/CeeBeeUK/cb-anagram)
-[![Stories in Done](https://badge.waffle.io/CeeBeeUK/cb-anagram.svg?label=ready&title=Done)](http://waffle.io/CeeBeeUK/cb-anagram)
 
 # Anagram Finder
 Ruby project to return anagrams of words into the path to return a JSON object of matches
